@@ -5,7 +5,7 @@ import './facyFontsandMore.css'
 import './animations.css'
 import PhotoGrid from "./PhotoGrid";
 import {Link} from "react-router-dom";
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {HashRouter, Switch, Route} from 'react-router-dom';
 import Single from "./Single";
 
 
@@ -15,8 +15,8 @@ class Main extends React.Component {
     render() {
 
         return (
-            <div >
-
+        
+                <HashRouter>
                 <h1> <Link to='/'> Reduxstagram</Link> </h1>
 
                      <Route exact path='/'>
@@ -25,8 +25,8 @@ class Main extends React.Component {
                     <Route path = "/view/:postId" >
                         <Single {...this.props} />
                     </Route>
-
-            </div>
+                </HashRouter>
+          
         );
     }
 
