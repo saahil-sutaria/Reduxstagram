@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Reduxstagram/static/css/main.3196c495.chunk.css",
+    "main.js": "/Reduxstagram/static/js/main.a903b84d.chunk.js",
+    "main.js.map": "/Reduxstagram/static/js/main.a903b84d.chunk.js.map",
+    "runtime-main.js": "/Reduxstagram/static/js/runtime-main.5bfaf37a.js",
+    "runtime-main.js.map": "/Reduxstagram/static/js/runtime-main.5bfaf37a.js.map",
+    "static/js/2.bd9b76fb.chunk.js": "/Reduxstagram/static/js/2.bd9b76fb.chunk.js",
+    "static/js/2.bd9b76fb.chunk.js.map": "/Reduxstagram/static/js/2.bd9b76fb.chunk.js.map",
+    "index.html": "/Reduxstagram/index.html",
+    "precache-manifest.007f5f51f93a278ba2ca53a05949c8fc.js": "/Reduxstagram/precache-manifest.007f5f51f93a278ba2ca53a05949c8fc.js",
+    "service-worker.js": "/Reduxstagram/service-worker.js",
+    "static/css/main.3196c495.chunk.css.map": "/Reduxstagram/static/css/main.3196c495.chunk.css.map",
+    "static/js/2.bd9b76fb.chunk.js.LICENSE.txt": "/Reduxstagram/static/js/2.bd9b76fb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5bfaf37a.js",
+    "static/js/2.bd9b76fb.chunk.js",
+    "static/css/main.3196c495.chunk.css",
+    "static/js/main.a903b84d.chunk.js"
+  ]
+}
