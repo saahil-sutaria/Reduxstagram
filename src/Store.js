@@ -1,23 +1,20 @@
 import {createStore, combineReducers} from 'redux';
-import comments from "./comments";
-import posts from "./posts";
+
+import comments from "./Data/comments";
+import posts from "./Data/posts";
+
 import commentReducer from "./Reducers/CommentReducer";
 import postReducer from "./Reducers/PostReducer";
-
-import rootReducers from './Reducers/index';
-import {removeComment ,addComment, addPath, IncrementLikes} from "./Actions/ActionCreators";
 import pathReducer from "./Reducers/PathReducer";
 
+/* export store object with actions and data */
 const loadSampleData = {
-    posts: posts,
+    posts : posts,
     comments: comments,
-    path: 0,
+    path : 0,
 };
 
-
-const store = createStore(combineReducers({comments:commentReducer, posts:postReducer, path: pathReducer}), loadSampleData )
-
-
+const store = createStore(combineReducers({comments:commentReducer, posts:postReducer, path: pathReducer}), loadSampleData ) //root reducer 
 
 export default store;
 

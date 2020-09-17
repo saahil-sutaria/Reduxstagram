@@ -1,28 +1,25 @@
 import React from 'react';
-import './Style.css'
-import './facyFontsandMore.css'
-import './animations.css'
-import Photo from "./Photos";
 
+import Photo from "./Photos";
+import './Styles/Style.css'
+import './Styles/facyFontsandMore.css'
+import './Styles/animations.css'
+
+/* responsible to render posts via map */
 class PhotoGrid extends React.Component {
 
-    constructor(props) {
-        super(props);
-
-    }
-
-
     render() {
-
         return (
-            <div className= "photo-grid">
-                {this.props.posts.map((key,i)=>{ return <Photo post={key} key={i} index={i} comments = {this.props.comments} {...this.props}/> })}
-
+            <div className = "photo-grid">
+                {this.props.posts.map((key , i) => { 
+                    return <Photo post = {key}
+                                  key = {i} 
+                                  index = {i} 
+                                  comments = {this.props.comments} 
+                                  {...this.props}/> 
+                })}
             </div>
         );
     }
-
 }
-
-
 export default PhotoGrid;
