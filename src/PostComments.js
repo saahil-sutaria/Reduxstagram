@@ -37,9 +37,11 @@ class PostComments extends React.Component {
                     <form ref = {form => this.form = form } 
                           className = "comment-form" 
                           onSubmit = {this.handleSubmit}>
-                        <input ref = {author => this.author=author} type = "text"  placeholder = "author"/>
-                        <input ref = {text => this.text = text } type = "text" placeholder = "comment"/>
-                        <input type = "submit" hidden/>
+                        <div className = "comment-form">
+                            <input ref = {author => this.author=author} type = "text"  placeholder = "Author"/>
+                            <input ref = {text => this.text = text } type = "text" placeholder = "comment"/>
+                            <input type = "submit" hidden/>
+                        </div>
                     </form>
                 </div>
             );

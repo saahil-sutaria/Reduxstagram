@@ -1,5 +1,5 @@
 body {
-    background: ghostwhite;
+    background: rgba(198, 211, 198, 0.603);
 }
 * {
     text-decoration: none!important;
@@ -17,16 +17,16 @@ body {
     flex-shrink: 0;
     margin: 0 2rem 2rem 2rem;
     padding: 2rem;
-    border: 1px solid #d3d3d3;
-    background: #fff;
-    box-shadow: 0 0 0 5px rgba(0,0,0,0.03);
+    border: 1px solid #8b8181;
+    background: rgba(246, 246, 245, 0.397);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.192);
     position: relative;
 }
 .single-photo {
     max-width: 900px;
     margin: 0 auto;
     display: flex;
-    background: #fff;
+    background: rgba(241, 240, 240, 0.055);
 }
 .single-photo .grid-figure {
     box-shadow: none;
@@ -57,10 +57,10 @@ body {
     opacity: 0;
 }
 .remove-comment:hover {
-    color: #f00;
+    color:red;
 }
 .comment {
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 1px solid rgba(228, 184, 184, 0.698);
     padding: 0.5rem 0;
 }
 .comment p {
@@ -68,14 +68,16 @@ body {
     margin: 0;
 }
 .comment strong {
-    color: #685fff;
+    color:  red;
     margin-right: 5px;
 }
 .comment:hover .remove-comment {
     opacity: 1;
 }
+
 .comment-form input,
 .comment-form textarea {
+    background-color: rgba(246, 246, 250, 0.658);
     width: 100%;
     border: 0;
     font-size: 1.3rem;
@@ -93,7 +95,7 @@ body {
     font-size: 2rem;
     padding: 1rem;
     position: absolute;
-    color: #6870ff;
+    color:  rgba(235, 18, 18, 0.698);
     left: 50%;
     top: 50%;
     pointer-events: none;
@@ -105,7 +107,8 @@ body {
 }
 button,
 .button {
-    border: 2px solid #f2f2f2;
+    
+    border: 2px solid #9b8686;
     background: none;
     flex-basis: 48%;
     display: inline-block;
@@ -114,7 +117,7 @@ button,
     padding: 5px;
     text-align: center;
     font-size: 15px;
-    color: #4f5bff;
+    color: rgba(235, 18, 18, 0.698);
     transition: all 0.2s;
    /* box-sizing: padding-box; */
 }
@@ -122,13 +125,14 @@ button:hover,
 .button:hover,
 button:focus,
 .button:focus {
-    border-color: #7f71ff;
+    color: red;
+    border-color:  rgba(235, 18, 18, 0.698);
     outline: 0;
 }
 .speech-bubble {
     width: 1.5rem;
     height: 1.25rem;
-    background: #4f61ff;
+    background: rgba(235, 18, 18, 0.698);
     display: inline-block;
     border-radius: 50%;
     position: relative;
@@ -141,7 +145,7 @@ button:focus,
     height: 0;
     border-style: solid;
     border-width: 0 1.25rem 1.25rem 0;
-    border-color: transparent #3f41ff transparent transparent;
+    border-color: transparent rgba(235, 18, 18, 0.698) transparent transparent;
     top: 30%;
     left: 0;
 }

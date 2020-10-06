@@ -2,7 +2,6 @@
   Variables
 */
 h1 {
-
     font-family: billabong, 'billabongregular';
     text-align: center;
     font-weight: 100;
@@ -22,11 +21,17 @@ p {
 
 h1 a {
     font-size: 18rem;
-    color: #125688;
+    color: rgb(136, 63, 63);
     text-decoration: none;
 }
 h1 a:focus {
     outline: 0;
+}
+#author-sub{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 @font-face {
     font-family: 'billabongregular';

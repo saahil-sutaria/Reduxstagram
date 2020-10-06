@@ -13,8 +13,11 @@ class Main extends React.Component {
     render() {
         return (
             <HashRouter>
-                <h1> <Link to = '/'> Reduxstagram </Link> </h1>
+                <br/>
+                <h1> <Link to = '/'> Reduxstagram </Link> <a href="https://www.linkedin.com/in/sahilsutaria/"><sub id = "author-sub">-by Sahil Sutaria</sub></a></h1>
+                <br/>
                 <Route exact path = '/'>
+                <br/>
                     <PhotoGrid {...this.props}/>
                 </Route>
                 <Route path = "/view/:postId" >

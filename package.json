@@ -2,7 +2,6 @@
   "name": "reduxtagram",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://saahil-sutaria.github.io/Reduxstagram/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -18,12 +17,11 @@
     "redux": "^4.0.5"
   },
   "scripts": {
+    "deploy": "aws s3 sync build/ s3://reduxstagram --acl public-read",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

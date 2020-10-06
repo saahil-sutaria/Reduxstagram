@@ -19,8 +19,8 @@ class Photo extends React.Component{
                     </Link>
                     <ReactCSSTransitionGroup
                         transitionName = "like"
-                        transitionEnterTimeout = {350}
-                        transitionLeaveTimeout = {350}>
+                        transitionEnterTimeout = {550}
+                        transitionLeaveTimeout = {850}>
                             <span key = {this.props.post.likes} className = "likes-heart">{post.likes}</span>
                     </ReactCSSTransitionGroup>
                 </div>

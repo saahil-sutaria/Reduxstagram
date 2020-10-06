@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import PostComments from "./PostComments";
 
 /* to render particular post by post code */
@@ -7,7 +8,7 @@ class Single extends React.Component {
     renderPhoto = (posts, path, comments) => {
         let post = posts[parseInt(path)]
         return <figure>
-            <img src = {post.display_src} alt = {this.props.posts.code} className = "grid-photo"/>
+            <img src = {post.display_src} alt = {this.props.posts.code} className = "grid-photo"/>    
             <figcaption>
                 <p>{post.caption}</p>
                 <div className = "control-buttons">
